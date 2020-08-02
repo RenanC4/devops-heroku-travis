@@ -16,3 +16,11 @@ branches:
     only:
     - master
     - stable
+deploy:
+    provider: heroku
+    api_key:
+        secure: 317aeb3b-d69c-4ebe-9cc3-b07a113a8f6f
+    app: cd-showcase
+    on:
+        repo: RenanC4/devops-heroku-travis   
+    
